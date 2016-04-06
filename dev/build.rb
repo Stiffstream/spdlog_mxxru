@@ -7,8 +7,6 @@ MxxRu::Cpp::composite_target( MxxRu::BUILD_ROOT ) {
 
   toolset.force_cpp14
   global_include_path '.'
-  default_runtime_mode MxxRu::Cpp::RUNTIME_RELEASE
-  MxxRu::enable_show_brief
 
   if FileTest.exist?( "local-build.rb" )
     required_prj "local-build.rb"

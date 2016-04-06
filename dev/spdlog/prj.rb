@@ -4,12 +4,14 @@ require 'mxx_ru/cpp'
 
 MxxRu::Cpp::composite_target {
 
-  include_path( 'spdlog/include', Mxx_ru::Cpp::Target::OPT_UPSPREAD )
+  include_path( 'spdlog/include', MxxRu::Cpp::Target::OPT_UPSPREAD )
 
-  if "unix" == toolset.tag( "target_os" )
+  if 'gcc' == toolset.name || 'clang' == toolset.name
     global_linker_option( "-pthread" )
-    global_linker_option( "-O3" )
-    global_linker_option( "-flto" )
+    if MxxRu::Cpp::RUNTIME_RELEASE == mxx_runtime_mode
+      global_linker_option( "-O3" )
+      global_linker_option( "-flto" )
+    end
   end
 }
 
