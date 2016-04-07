@@ -15,5 +15,10 @@ MxxRu::Cpp::composite_target( MxxRu::BUILD_ROOT ) {
     MxxRu::enable_show_brief
   end
 
+  if MxxRu::Cpp::RUNTIME_RELEASE == mxx_runtime_mode
+    global_linker_option( "-O3" )
+    global_linker_option( "-flto" )
+  end
+
   required_prj 'sample/usage/prj.rb'
 }
