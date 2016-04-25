@@ -31,7 +31,7 @@ to download and extract *spdlog_mxxru*'s dependencies.
 For *spdlog_mxxru* itself:
 ~~~~~
 ::ruby
-MxxRu::arch_externals :cppformat_mxxru do |e|
+MxxRu::arch_externals :spdlog_mxxru do |e|
   e.url 'https://bitbucket.org/sobjectizerteam/spdlog_mxxru-1.1/get/v.1.1.0.tar.bz2'
 
   e.map_dir 'dev/spdlog_mxxru' => 'dev'
