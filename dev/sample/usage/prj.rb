@@ -2,9 +2,9 @@ require 'mxx_ru/cpp'
 
 MxxRu::Cpp::exe_target {
 
-  target( "sample.usage" )
+  target 'sample.usage'
 
-  cpp_source( "main.cpp" )
+  cpp_source 'main.cpp'
 
-  required_prj( "spdlog/prj.rb" )
+  required_prj 'spdlog_mxxru/prj.rb'
 }
