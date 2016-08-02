@@ -56,9 +56,8 @@ MxxRu::arch_externals :fmtlib_mxxru do |e|
   e.map_dir 'dev/fmt_mxxru' => 'dev'
 end
 
-MxxRu::git_externals :spdlog do |e|
-  e.url 'https://github.com/gabime/spdlog.git'
-  e.tag 'v0.9.0'
+MxxRu::arch_externals :spdlog do |e|
+  e.url 'https://github.com/gabime/spdlog/archive/v0.9.0.zip'
 
   e.map_dir 'include' => 'dev/spdlog'
 end
