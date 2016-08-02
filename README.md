@@ -10,7 +10,7 @@ To use *spdlog_mxxru* it is necessary to have:
 
 * C++11 compiler (VC++14.0, GCC 5.1 or above, clang 3.6 or above);
 * [fmtlib](http://fmtlib.net/latest/index.html) 3.0.0 or above;
-* [fmtlib_mxxru] (https://bitbucket.org/sobjectizerteam/fmtlib_mxxru-0.1) 0.1.0 or above;
+* [fmtlib_mxxru](https://bitbucket.org/sobjectizerteam/fmtlib_mxxru-0.1) 0.1.0 or above;
 * [spdlog](https://github.com/gabime/spdlog);
 * [Mxx_ru](https://sourceforge.net/projects/mxxru/) 1.6.11 or above.
 
