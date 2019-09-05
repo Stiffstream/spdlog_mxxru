@@ -1,0 +1,13 @@
+/.externals
+*.swp
+/dev/target
+/dev/zbuild
+/dev/fmt
+/dev/fmt_mxxru
+/dev/spdlog
+/dev/__*.vim
+/dev/local-build.rb
+/dev/logs
+*.sublime-project
+*.sublime-workspace
+

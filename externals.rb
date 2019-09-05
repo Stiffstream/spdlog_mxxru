@@ -6,7 +6,7 @@ MxxRu::arch_externals :fmt do |e|
 end
 
 MxxRu::arch_externals :fmtlib_mxxru do |e|
-  e.url 'https://bitbucket.org/sobjectizerteam/fmtlib_mxxru-0.1/get/v.0.1.0.tar.bz2'
+  e.url 'https://github.com/Stiffstream/fmtlib_mxxru/archive/v.0.1.0.tar.gz'
 
   e.map_dir 'dev/fmt_mxxru' => 'dev'
 end
